@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>658</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="s_login">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="s0_l_title">
+          <property name="text">
+           <string>HiveChime Data Access System</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="inputs">
+          <property name="fieldGrowthPolicy">
+           <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+          </property>
+          <property name="labelAlignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="formAlignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+          <property name="leftMargin">
+           <number>150</number>
+          </property>
+          <property name="rightMargin">
+           <number>200</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="s0_l_username">
+            <property name="text">
+             <string>Username:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="s0_le_username">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="s0_l_password">
+            <property name="text">
+             <string>Password:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="s0_le_password">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="buttons">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <property name="leftMargin">
+           <number>250</number>
+          </property>
+          <property name="rightMargin">
+           <number>250</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="s0_pb_Login">
+            <property name="maximumSize">
+             <size>
+              <width>620</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Log In</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="s0_pb_NewUser">
+            <property name="text">
+             <string>New User</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="s0_l_status">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>74</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="s_newUser">
+       <widget class="QLabel" name="s1_l_status">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>80</y>
+          <width>181</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>10</y>
+          <width>261</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="s1_l_title">
+           <property name="text">
+            <string>New User</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <property name="horizontalSpacing">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="s1_l_username">
+             <property name="text">
+              <string>Username</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="s1_le_username"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="s1_l_password">
+             <property name="text">
+              <string>Password</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="s1_le_password">
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="s1_l_confirmPassword">
+             <property name="text">
+              <string>Confirm Password</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="s1_le_confirmPassword">
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="s1_l_firstName">
+             <property name="text">
+              <string>First Name</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="s1_le_firstName">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="s1_l_lastName">
+             <property name="text">
+              <string>Last Name</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="s1_le_lastName">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="s1_l_email">
+             <property name="text">
+              <string>Email</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="s1_le_email">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="s1_pb_back">
+             <property name="text">
+              <string>Back</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="s1_pb_CreateUser">
+             <property name="text">
+              <string>Create User</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="s_forgotPassword">
+       <widget class="QPushButton" name="s2_pb_reset">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>220</y>
+          <width>121</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reset Password</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s2_le_username">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s2_le_newPassword">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>120</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s2_le_confPassword">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>170</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s2_l_title">
+        <property name="geometry">
+         <rect>
+          <x>233</x>
+          <y>10</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reset password</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s2_l_username">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>70</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Username</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s2_l_newPassword">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>120</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>New Password</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s2_l_confPassword">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>170</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Confirm Password</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s2_l_status">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>300</y>
+          <width>281</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="s_homeScreen">
+       <widget class="QLabel" name="s3_l_title">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>10</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Home Screen</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_status">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>46</y>
+          <width>151</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s3_pb_logout">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>340</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Logout</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s3_pb_beeChimes">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>70</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>BeeChimes</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="s3_hs_scale">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>170</y>
+          <width>171</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>-3</number>
+        </property>
+        <property name="maximum">
+         <number>3</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_scale">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>140</y>
+          <width>171</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Time Scale</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_scaleMin">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>170</y>
+          <width>57</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1/8 x</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_scaleMax">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>170</y>
+          <width>57</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>8 x</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_incrementMin">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>240</y>
+          <width>57</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1/8 s</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_incrementMax">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>240</y>
+          <width>57</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>8 s</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSlider" name="s3_hs_increment">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>240</y>
+          <width>171</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>-3</number>
+        </property>
+        <property name="maximum">
+         <number>3</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_increment">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>210</y>
+          <width>171</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Time Increment</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_pSimPlayedMin">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>310</y>
+          <width>57</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_pSimPlayedMax">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>310</y>
+          <width>57</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>100</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSlider" name="s3_hs_pSimPlayed">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>310</y>
+          <width>171</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="value">
+         <number>50</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s3_l_pSimPlayed">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>280</y>
+          <width>171</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>% of Simulation Played</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s3_pb_beeAlerts">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>70</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Bee Alerts</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s3_pb_viewCurrentWeather">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>150</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Current Weather</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="s_addHive">
+       <widget class="QLabel" name="s4_l_title">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>10</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Hive</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s4_le_hiveID">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>50</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s4_l_hiveID">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>50</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hive ID</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s4_l_hiveLocation">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>100</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hive Location</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s4_le_hiveLocation">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>100</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s4_l_status">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>10</y>
+          <width>141</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Not set up yet to add to database!</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s4_pb_add">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>260</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s4_pb_cancel">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>330</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="s_findHive">
+       <widget class="QPushButton" name="s5_pb_selectHive">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>320</y>
+          <width>191</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Select Hive</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s5_pb_home">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>320</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Home</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s5_l_currHive">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>320</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Current Hive:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s5_l_currentHiveStatus">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>320</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="s_hiveScreen">
+       <widget class="QLabel" name="s6_l_title">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>20</y>
+          <width>131</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hive Screen</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s6_pb_editHive">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>320</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Edit Hive</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s6_pb_viewData">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>260</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>View Data</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s6_l_status">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>80</y>
+          <width>161</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s6_pb_back">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>83</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="s_editHive">
+       <widget class="QLabel" name="s7_l_title">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>10</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Edit Hive</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s7_l_updateLocation">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>80</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Update location:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s7_le_updateLocation">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>80</y>
+          <width>171</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s7_pb_submitChanges">
+        <property name="geometry">
+         <rect>
+          <x>222</x>
+          <y>310</y>
+          <width>211</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Submit Changes</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="s_hiveData">
+       <widget class="QLabel" name="s8_l_status">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>140</y>
+          <width>141</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Cue the music, folks</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="s8_l_title">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>20</y>
+          <width>64</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Data</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="s8_pb_back">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>320</y>
+          <width>83</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>s0_le_username</tabstop>
+  <tabstop>s0_le_password</tabstop>
+  <tabstop>s0_pb_Login</tabstop>
+  <tabstop>s0_pb_NewUser</tabstop>
+  <tabstop>s1_le_username</tabstop>
+  <tabstop>s1_le_password</tabstop>
+  <tabstop>s1_le_confirmPassword</tabstop>
+  <tabstop>s1_le_firstName</tabstop>
+  <tabstop>s1_le_lastName</tabstop>
+  <tabstop>s1_le_email</tabstop>
+  <tabstop>s1_pb_CreateUser</tabstop>
+  <tabstop>s2_le_username</tabstop>
+  <tabstop>s2_le_newPassword</tabstop>
+  <tabstop>s2_le_confPassword</tabstop>
+  <tabstop>s2_pb_reset</tabstop>
+  <tabstop>s3_pb_logout</tabstop>
+  <tabstop>s3_pb_beeChimes</tabstop>
+  <tabstop>s3_hs_scale</tabstop>
+  <tabstop>s3_hs_increment</tabstop>
+  <tabstop>s3_hs_pSimPlayed</tabstop>
+  <tabstop>s4_le_hiveID</tabstop>
+  <tabstop>s4_le_hiveLocation</tabstop>
+  <tabstop>s4_pb_add</tabstop>
+  <tabstop>s4_pb_cancel</tabstop>
+  <tabstop>s5_pb_selectHive</tabstop>
+  <tabstop>s5_pb_home</tabstop>
+  <tabstop>s6_pb_viewData</tabstop>
+  <tabstop>s6_pb_editHive</tabstop>
+  <tabstop>s6_pb_back</tabstop>
+  <tabstop>s7_le_updateLocation</tabstop>
+  <tabstop>s8_pb_back</tabstop>
+  <tabstop>s7_pb_submitChanges</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

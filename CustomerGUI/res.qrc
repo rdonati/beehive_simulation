@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>bells_b5.mp3</file>
+        <file>bells_b6.mp3</file>
+        <file>bells_c5.mp3</file>
+        <file>bells_c6.mp3</file>
+        <file>bells_e5.mp3</file>
+        <file>bells_e6.mp3</file>
+        <file>bells_g5.mp3</file>
+        <file>bells_g6.mp3</file>
+    </qresource>
+</RCC>

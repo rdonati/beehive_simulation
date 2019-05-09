@@ -1,0 +1,10 @@
+Deliverable no.1
+
+The analysis code worked well.
+
+The low grade is due to shortcomings in the simulation code. I would expect this to be more developed by now. Please let me know if I'm mistaken and it's already working somewhere.
+
+If it is still underdeveloped, 1-2 people in the group need to be working on it. I had expected to see many UDP messages being generated, ideally from specifiable input parameters and involving random number generation.
+
+Grade: 3/5 (subject to improvement, once you show me your simulation code is more developed)
+
